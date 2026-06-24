@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>援爱慈善基金会 · 捐款公示</title>
+    <!-- 干净、庄重的风格 -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(145deg, #f5f0eb 0%, #e8e0d8 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', 'Noto Sans', sans-serif;
+            padding: 20px;
+        }
+
+        .card {
+            max-width: 680px;
+            width: 100%;
+            background: rgba(255, 248, 240, 0.85);
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            border-radius: 48px;
+            padding: 56px 40px 52px;
+            box-shadow: 
+                0 25px 50px -12px rgba(60, 35, 15, 0.18),
+                inset 0 1px 2px rgba(255, 245, 235, 0.6);
+            border: 1px solid rgba(230, 210, 190, 0.3);
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+
+        /* 主标题 — 基金会名称 */
+        .foundation-name {
+            font-size: clamp(2.2rem, 9vw, 3.6rem);
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            color: #36251b;
+            line-height: 1.2;
+            text-shadow: 0 2px 4px rgba(80, 45, 22, 0.04);
+            margin-bottom: 16px;
+            word-break: break-word;
+        }
+
+        /* 装饰分隔线 (极淡) */
+        .divider {
+            width: 90px;
+            height: 3px;
+            background: #cbb29a;
+            opacity: 0.28;
+            margin: 10px auto 20px;
+            border-radius: 99px;
+        }
+
+        /* 捐款金额 — 醒目 */
+        .donation-amount {
+            font-size: clamp(2.8rem, 11vw, 4.8rem);
+            font-weight: 700;
+            color: #aa3e2a;
+            letter-spacing: 0.03em;
+            line-height: 1.15;
+            background: linear-gradient(to right, #8b3120, #bc4c34);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 4px 14px rgba(170, 62, 42, 0.08);
+            margin-top: 4px;
+            margin-bottom: 8px;
+        }
+
+        /* “以捐款” 辅助描述 */
+        .sub-line {
+            font-size: 1.05rem;
+            font-weight: 400;
+            color: #6b5343;
+            letter-spacing: 0.07em;
+            background: rgba(200, 175, 155, 0.13);
+            display: inline-block;
+            padding: 6px 22px;
+            border-radius: 36px;
+            backdrop-filter: blur(2px);
+            margin-top: 8px;
+            border: 1px solid rgba(180, 150, 125, 0.15);
+        }
+
+        /* 小额脚标 — 增加可信感 */
+        .footnote {
+            margin-top: 38px;
+            font-size: 0.82rem;
+            color: #948270;
+            letter-spacing: 0.025em;
+            border-top: 1px solid rgba(160, 135, 115, 0.12);
+            padding-top: 26px;
+            display: flex;
+            justify-content: center;
+            gap: 8px 18px;
+            flex-wrap: wrap;
+        }
+
+        .footnote span {
+            opacity: 0.65;
+        }
+
+        /* 完全响应式 */
+        @media (max-width: 480px) {
+            .card {
+                padding: 32px 20px 30px;
+                border-radius: 32px;
+            }
+            .divider {
+                width: 64px;
+                margin: 6px auto 14px;
+            }
+            .sub-line {
+                font-size: 0.95rem;
+                padding: 4px 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- 第一行：基金会全称 -->
+        <h1 class="foundation-name">援爱慈善基金会</h1>
+
+        <!-- 极简装饰 -->
+        <div class="divider"></div>
+
+        <!-- 第二行：捐款金额 —— 突出显示 -->
+        <div class="donation-amount">120,000 元</div>
+
+        <!-- 辅助文字：清晰表明“以捐款”含义 -->
+        <div class="sub-line">❤ 已捐款 120,000 元</div>
+
+        <!-- 底部氛围信息 (纯装饰，不影响正文) -->
+        <div class="footnote">
+            <span>善款透明 · 爱心直达</span>
+            <span>✦</span>
+            <span>公示编号 20260624</span>
+        </div>
+    </div>
+
+    <!-- 简单的结构化备注：完全符合 "援爱慈善基金会" + 下一行 "以捐款120000元" 要求 -->
+</body>
+</html>
